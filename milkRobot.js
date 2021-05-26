@@ -80,12 +80,33 @@ function isEven(number) {
     }
 }
 console.log(isEven(-1));
-*/
+*//*
 let codeCamp = string => {
+    let newString = "";
     if (string.length === 0) {
-        return string[string.length];
+        return newString += string[string.length];
     } else {
-        return codeCamp((string.length - 1) - 1);
+        return codeCamp(string.length - 1);
     }
 }
 console.log(codeCamp("freeCodeCamp"));
+*//*
+let codeCamp = string => {
+    let newString = "";
+    for (let counter = string.length - 1; counter >= 0; counter--) {
+        newString += string[counter];
+    }
+    console.log(newString);
+}
+codeCamp("freeCodeCamp");
+*/
+function countBs (string) {
+    let count = 0;
+    for (let i = 0; i < string.length - 1; i++) {
+        if (string[i] == "B"){
+            count++;
+        }
+        return count;
+    }
+}
+console.log(countBs("BeabadoBee"));
