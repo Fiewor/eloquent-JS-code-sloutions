@@ -88,12 +88,88 @@
 //     }
 //     return newArr;
 // }
+
 // reverse an array in place
-function reverseArrayInPlace(array) {
-    for(let i = 1; i <= array.length; i++) {
-        lastItem = array[array.length - i];
-        array.unshift(lastItem);
-    }
-    return array;
-}
-console.log(reverseArrayInPlace(["freeCodeCamp", 1, 6, false, "azure"]));
+// function reverseArrayInPlace(array) {
+//      for (let i = 0; i < Math.floor(array.length/2); i++) {
+//         let last = array[array.length - 1 - i];
+//         let first = array[i];
+//         array[i] = last;
+//         last = first;
+//     }
+//     return array;
+// }
+// console.log(reverseArrayInPlace(["freeCodeCamp", 1, 6, false, "azure", "error"]));
+
+// implementing linked list
+// function arrayToList(array) {
+//     let list;
+//     for (let i = array.length - 1; i >= 0; i--) {
+//         list = `value: ` + array[i] + `,\n\trest:{\n` + list + `\n}`;
+//     }
+//     return list;
+// }
+// console.log(arrayToList([1, 2, 3]));
+
+//listToArray
+// function listToArray(arr) {
+    // let array = [];
+    // for (let i = 0; i < arr.length; i++) {
+    //     array.push(arr.value);
+    // }
+    // return array;
+//     return arr[3];
+// }
+// console.log(listToArray(arrayToList([1, 2, 3])));
+
+// function prepend(element, list) {
+
+// }
+// console.log(prepend());
+
+// function nth(list, number) {
+
+// }
+// console.log(nth());
+
+// function deepEqual(value1, value2) {
+//     if(value1 !== null && value2 !== null) {
+//         if(typeof value1 === typeof value2) {
+//             if(Object.keys(value1).length === Object.keys(value2).length) {
+//                 return true;
+//             }
+//             else {
+//                 return `They values of the properties of ${value1} and ${value2} are not the same`;
+//             }
+//         } else {
+//             return `${value1} and ${value2} are not of the same datatype`;
+//         }
+//     } else {
+//         return `Either ${value1} or ${value2} is null`;
+//     }
+// }
+// let myObject1 = {
+//     john:20,
+//     ford:20
+// };
+// let myObject2 = {
+//     john:20,
+//     john:20
+// };
+// console.log(deepEqual(myObject1, myObject2));
+
+// repeat = (n, action) => {
+//     for(let i = 0; i < n; i++) {
+//         action(i);
+//     }
+// }
+// let labels = [];
+// repeat(5, i => {
+//     labels.push(`Unit ${i + 1}`);
+// });
+// console.log(labels);
+
+//for...of loop
+
+//map
+//reduce
