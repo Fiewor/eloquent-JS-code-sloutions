@@ -90,16 +90,34 @@
 // }
 
 // reverse an array in place
-// function reverseArrayInPlace(array) {
-//      for (let i = 0; i < Math.floor(array.length/2); i++) {
-//         let last = array[array.length - 1 - i];
-//         let first = array[i];
-//         array[i] = last;
-//         last = first;
+function reverseArrayInPlace(array) {
+    let last = array[array.length - 1 - i];
+    let first = array[i];
+     for (var i = 0; i < last; i++) {
+        array[i] = last;
+        last = first;
+    }
+    return array;
+}
+console.log(reverseArrayInPlace(["freeCodeCamp", 1, 6, false, "azure", "error"]));
+
+// reversing a string (using Morgan James' idea)
+// function reverseString(str) {
+//     str = str.split("");
+//     let start = 0;
+//     let end = str.length - 1;
+//     let temporary;
+//     while (start < end) {
+//       temporary = str[start];
+//       str[start] = str[end];
+//       str[end] = temporary;
+//       start++;
+//       end--;
 //     }
-//     return array;
-// }
-// console.log(reverseArrayInPlace(["freeCodeCamp", 1, 6, false, "azure", "error"]));
+//     str = str.join(""); 
+//     console.log((str));
+//   }
+//   reverseString("Greetings from Earth");
 
 // implementing linked list
 // function arrayToList(array) {
@@ -169,7 +187,27 @@
 // });
 // console.log(labels);
 
+// function greaterThan(n) {
+//     return m=> m > n;
+// }
+// let greaterThan10 = greaterThan(10);
+// console.log(greaterThan10(11));
 //for...of loop
+// filter
+// const words = ['john', 'jonathan', 'jane', 'jamesons'];
+// const result = words.filter(word => word.length < 6);
+// console.log(result);
 
+// how the filter method works under the hood
+// function filter(array, test) {
+//     let passed = [];
+//     for (let element of array) {
+//         if (test(element)) {
+//             passed.push(element);
+//         }
+//     }
+//     return passed;
+// }
+// console.log(filter(words, word => word.length < 6));
 //map
 //reduce
