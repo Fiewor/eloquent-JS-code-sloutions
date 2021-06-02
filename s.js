@@ -89,17 +89,17 @@
 //     return newArr;
 // }
 
-// reverse an array in place
-function reverseArrayInPlace(array) {
-    let last = array[array.length - 1 - i];
-    let first = array[i];
-     for (var i = 0; i < last; i++) {
-        array[i] = last;
-        last = first;
-    }
-    return array;
-}
-console.log(reverseArrayInPlace(["freeCodeCamp", 1, 6, false, "azure", "error"]));
+// // reverse an array in place
+// function reverseArrayInPlace(array) {
+//     let last = array[array.length - 1 - i];
+//     let first = array[i];
+//      for (var i = 0; i < last; i++) {
+//         array[i] = last;
+//         last = first;
+//     }
+//     return array;
+// }
+// console.log(reverseArrayInPlace(["freeCodeCamp", 1, 6, false, "azure", "error"]));
 
 // reversing a string (using Morgan James' idea)
 // function reverseString(str) {
@@ -118,6 +118,67 @@ console.log(reverseArrayInPlace(["freeCodeCamp", 1, 6, false, "azure", "error"])
 //     console.log((str));
 //   }
 //   reverseString("Greetings from Earth");
+
+// factorial
+// function factorialize(num) {
+//   let result = 1;
+//   for (var i = 1; i <= num; i++) {
+//    result = result * i;
+//   }
+//   return result;
+// }
+// console.log(factorialize(5));
+
+// recursive version of factorial
+// function factorialize(num) {
+//   if (num == 1) {
+//     return num;
+//   } else {
+//     return num * factorialize(num - 1);
+//   }
+// }
+// console.log(factorialize(5));
+
+// find the longest word in a string
+// function longestWord(str) {
+//   let words = str.split(" ");
+//   for (let i = 0; i < words.length - 1; i++) {
+//     let next = i + 1;
+//     if (words[i].length < words[next].length) {
+//       if (words[next].length > words[next + 1].length) {
+//         return words[next].length;
+//       } else {
+//         return words[next + 1].length;
+//       }
+//       // next++;
+//     } else {
+//       words[i].length;
+//     }
+//   }
+// }
+// console.log(longestWord("The quick brown fox jumped over the tall black picket fence"));
+// function longestWord(str) {
+//   let words = str.split(" ");
+//   for (let word of words) {
+//     if (word.length < word.length) {
+//       console.log(word);
+//     } else {
+//       longestWord(words);
+//     }
+//   }
+  // words.forEach(element => {
+  //   console.log(element);
+  // });
+// }
+// console.log(longestWord("The quick brown fox jumped over the tall black picket fence"));
+
+// return largest numbers of each array
+// function largeNumbers(array) {
+
+// }
+// check if a string ends with target character
+
+// repeat a string a specified number of times
 
 // implementing linked list
 // function arrayToList(array) {
@@ -192,6 +253,7 @@ console.log(reverseArrayInPlace(["freeCodeCamp", 1, 6, false, "azure", "error"])
 // }
 // let greaterThan10 = greaterThan(10);
 // console.log(greaterThan10(11));
+
 //for...of loop
 // filter
 // const words = ['john', 'jonathan', 'jane', 'jamesons'];
@@ -199,6 +261,9 @@ console.log(reverseArrayInPlace(["freeCodeCamp", 1, 6, false, "azure", "error"])
 // console.log(result);
 
 // how the filter method works under the hood
+// it is a pure function which doesn't modify the given array,
+// but instead builds up a new array with elements that pass the test
+
 // function filter(array, test) {
 //     let passed = [];
 //     for (let element of array) {
@@ -209,5 +274,35 @@ console.log(reverseArrayInPlace(["freeCodeCamp", 1, 6, false, "azure", "error"])
 //     return passed;
 // }
 // console.log(filter(words, word => word.length < 6));
-//map
-//reduce
+
+// map - TRANSFORMS an array by applying a function to all
+// of its elements and building a new array from the returned values.
+// the new array has the same length as the input array,
+// but its content will have been mapped to a new form by the function
+// function map(array, transform){
+//   let mapped = [];
+//   for (element of array) {
+//     mapped.push(transform(element));
+//   }
+//   return mapped;
+// }
+// SUMMARIZE with reduce
+// reduce(sometimes called fold) - builds a value by repeatedly taking a single element from the array
+// and combining it with the current value
+// parameters to .reduce() are array, a combining function and a start value
+// function reduce(array, combine, start) {
+//   let current = start;
+//   for (let element of array) {
+//     current = combine(current, element);
+//   }
+//   return current;
+// }
+
+// flatten an array of arrays into a single array
+flatten = (array) => {
+  array.reduce((a, b) => a.concat(b), []);
+}
+console.log(flatten([[1, 2, 3], ["one, two", "three"], [4, "cinq", false]]));
+
+  // /regex/.test('string'); - returns a boolean (i.e. true or false)
+  // 'string'.match(/regex/); - retrieves the result of matching a string against a regex
