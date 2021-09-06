@@ -300,9 +300,49 @@
 
 // flatten an array of arrays into a single array
 flatten = (array) => {
-  array.reduce((a, b) => a.concat(b), []);
+  array.reduce((a, b) => a.concat(b));
 }
 console.log(flatten([[1, 2, 3], ["one, two", "three"], [4, "cinq", false]]));
 
+// my own loop
+myloop = (value) => {
+  let currentValue = 0;
+  return (currentValue < value);
+  currentValue++;
+    // return true;
+    // stop if the above function returns false
+
+  return false;
+  (currentValue) => return currentValue;
+  return (currentValue) => return currentValue = "some new value";
+}
+
+// let arr1 = ["an", "array"];
+// let arr2 =[1, false];
+// let arr3 = arr1.concat(arr2);
+// console.log(arr3);
+
   // /regex/.test('string'); - returns a boolean (i.e. true or false)
   // 'string'.match(/regex/); - retrieves the result of matching a string against a regex
+
+// instantiation
+class Player {
+  constructor(name, type) {
+    this.name = name;
+    this.type = type;
+  }
+  introduce() {
+    console.log(`Hi I am ${this.name}, I'm a ${this.type}`)
+  }
+}
+class Wizard extends Player {
+  constructor(name, type) {
+    super(name, type)
+  }
+  play() {
+    console.log(`HAHAHA, I'm a ${this.type}`);
+  }
+}
+
+const wizard1 = new Wizard('Shelly', 'Healer');
+ 
