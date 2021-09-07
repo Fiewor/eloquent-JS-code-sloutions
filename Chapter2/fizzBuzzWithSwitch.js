@@ -1,5 +1,5 @@
-/* for (let number = 1; number <= 100; number++) {
-    switch(number) {
+for (let number = 1; number <= 100; number++) {
+    switch(true) {
 
         case(number % 3 === 0 && number % 5 === 0):
             console.log("FizzBuzz");
@@ -17,4 +17,4 @@
             console.log(number);
             break;
     }
-} */
+} 

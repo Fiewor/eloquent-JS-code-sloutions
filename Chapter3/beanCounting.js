@@ -16,9 +16,10 @@ function countChar(string, char) {
     let number = 0;
     for(let counter = 0; counter < string.length; counter++) {
         if (string[counter]===char) {
-            return number++;
+            number++;
         }
-        console.log(number);
+        // console.log(number);
     }
+    return number;
 }
-console.log(countChar("Kamado Tanjiro Total Concentration Breathing", "a"));
+console.log(countChar("Kamado Tanjiro Total Concentration Breathing", "g"));

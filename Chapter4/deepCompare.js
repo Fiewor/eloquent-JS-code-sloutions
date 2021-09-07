@@ -42,3 +42,29 @@ let val2 = [1, 2]
 
 let result = deepEqual(val1, val2)
 console.log(result)
+
+// function deepEqual(value1, value2) {
+//     if(value1 !== null && value2 !== null) {
+//         if(typeof value1 === typeof value2) {
+//             if(Object.keys(value1).length === Object.keys(value2).length) {
+//                 return true;
+//             }
+//             else {
+//                 return `They values of the properties of ${value1} and ${value2} are not the same`;
+//             }
+//         } else {
+//             return `${value1} and ${value2} are not of the same datatype`;
+//         }
+//     } else {
+//         return `Either ${value1} or ${value2} is null`;
+//     }
+// }
+// let myObject1 = {
+//     john:20,
+//     ford:20
+// };
+// let myObject2 = {
+//     john:20,
+//     john:20
+// };
+// console.log(deepEqual(myObject1, myObject2));

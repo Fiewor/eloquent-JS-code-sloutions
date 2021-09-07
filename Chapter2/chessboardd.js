@@ -13,3 +13,4 @@ for (let y = 0; y < size; y++) { // in the outer loop we add newline to seperate
     }
     board += "\n";
 }
+console.log(board)

@@ -1,3 +1,5 @@
+// attempt to redo everything + more
+
 // function isEven(n) {
 //     if (n === 0) {
 //         return true;
@@ -89,7 +91,7 @@
 //     return newArr;
 // }
 
-// // reverse an array in place
+// reverse an array in place
 // function reverseArrayInPlace(array) {
 //     let last = array[array.length - 1 - i];
 //     let first = array[i];
@@ -150,7 +152,7 @@
 //       } else {
 //         return words[next + 1].length;
 //       }
-//       // next++;
+      // next++;
 //     } else {
 //       words[i].length;
 //     }
@@ -299,23 +301,23 @@
 // }
 
 // flatten an array of arrays into a single array
-flatten = (array) => {
-  array.reduce((a, b) => a.concat(b));
-}
-console.log(flatten([[1, 2, 3], ["one, two", "three"], [4, "cinq", false]]));
+// flatten = (array) => {
+//   array.reduce((a, b) => a.concat(b));
+// }
+// console.log(flatten([[1, 2, 3], ["one, two", "three"], [4, "cinq", false]]));
 
 // my own loop
-myloop = (value) => {
-  let currentValue = 0;
-  return (currentValue < value);
-  currentValue++;
+// myloop = (value) => {
+//   let currentValue = 0;
+//   return (currentValue < value);
+//   currentValue++;
     // return true;
     // stop if the above function returns false
 
-  return false;
-  (currentValue) => return currentValue;
-  return (currentValue) => return currentValue = "some new value";
-}
+//   return false;
+//   (currentValue) => return currentValue;
+//   return (currentValue) => return currentValue = "some new value";
+// }
 
 // let arr1 = ["an", "array"];
 // let arr2 =[1, false];
