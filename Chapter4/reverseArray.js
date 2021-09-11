@@ -5,24 +5,26 @@
 //         lastItem = array[array.length - i];
 //         newArr.push(lastItem);
 //     }
-    // return newArr;
-//     console.log(newArr);
+//     return newArr;
 // }
 // console.log(reverseArray(["freeCodeCamp", 1, 6, false, "azure", "error"]));
 
 // reverse an array in place
-// function reverseArrayInPlace(array) {
-//     let last = array[array.length - 1 - i];
-//     let first = array[i];
-//      for (var i = 0; i < last; i++) {
-//         array[i] = last;
-//         last = first;
-//     }
-    // return array;
-//     console.log(array);
-// }
-// reverseArrayInPlace(["freeCodeCamp", 1, 6, false, "azure", "error"]);
-// doesnt work?
+function reverseArrayInPlace(array) {
+    let last, first, temporary;
+    let end = array.length - 1
+    for (let i = 0; i < end; i++) {
+        last = array[end];
+        first = array[i];
+        temporary = first;
+        first = last;
+        last = temporary;
+        end--
+    }
+    return array;
+}
+console.log(reverseArrayInPlace(["freeCodeCamp", 1, 6, false, "azure", "error"]))
+// doesn't work?
 
 // reversing a string (using Morgan James' idea)
 // function reverseString(str) {

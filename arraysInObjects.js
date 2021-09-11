@@ -1,6 +1,6 @@
 var user = {
     name: "John",
-    age: 27,
+    age: 22,
     hobby: "meeting people",
     isMarried: false,
     spells: ["bombarda maxima", "avadakadvra", "wingardium leviosa"],
